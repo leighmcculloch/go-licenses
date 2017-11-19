@@ -9,7 +9,7 @@ func Names() []string {
 	return fileNames
 }
 
-func Get(name string) ([]byte, bool) {
+func Text(name string) ([]byte, bool) {
 	bytes, ok := files[name]
 	return bytes, ok
 }
