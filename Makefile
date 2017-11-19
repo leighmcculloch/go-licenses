@@ -1,7 +1,8 @@
 .PHONY: generate data setup
 
 generate:
-	embedfiles -out files.go -pkg licenses data
+	cd data && \
+		embedfiles -out ../data.go -pkg licenses .
 
 data:
 	rm -fr data && \
