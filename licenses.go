@@ -9,7 +9,7 @@ func Names() []string {
 	return fileNames
 }
 
-func Text(name string) ([]byte, bool) {
-	bytes, ok := files[name]
+func Text(licenseName string) ([]byte, bool) {
+	bytes, ok := files[licenseName]
 	return bytes, ok
 }
